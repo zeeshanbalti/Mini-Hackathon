@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-app.js";
-import { getAuth ,createUserWithEmailAndPassword ,signInWithEmailAndPassword ,updateProfile    } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-auth.js";
+import { getAuth  ,createUserWithEmailAndPassword ,signInWithEmailAndPassword ,updateProfile    } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-auth.js";
 
-// import { collection, addDoc ,getFirestore  , } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-firestore.js"; 
+import { collection, addDoc ,getFirestore  ,updateDoc  } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-firestore.js"; 
 
 
 const firebaseConfig = {
@@ -18,24 +18,20 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-
+// const washingtonRef = doc(db, "user", user.uid);
+ 
 // Profile Section
 
-let name1 = document.getElementById("profileName")
-// name1.innerHTML= ""
-let name = document.getElementById("profileName")
-let oldPassword = document.getElementById("oldPassword")
-let newpassword = document.getElementById("newpassword")
+
+let userName = document.getElementById("userName")
+let userEmail = document.getElementById("userEmail")
 let newpasswordrepeat = document.getElementById("newpasswordrepeat")
 
-let UpdateBtn = document.getElementById("UpdateBtn");
+ 
+let fileInput = document.getElementById("fileInput");
 
-UpdateBtn.addEventListener("click" , () => {
-    updateProfile(auth.currentUser, {
-        name: "Jane Q. User", pass:oldPassword.value ,newpassword
-      }).then(() => {
-        console.log("Update hogya ==>>")
-      }).catch((error) => {
-      console.log("nhi hua update",error)
-      });
+fileInput.addEventListener("change",(e) => {
+  let profileImg = document.getElementById("profileImg")
+  profileImg.src = URL.createObjectURL(e.target.files[0])
+  console.log(e.target.files[0])
 })

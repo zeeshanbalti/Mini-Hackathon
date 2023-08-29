@@ -18,86 +18,45 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
  
-
-let SignUp = document.getElementById('beforeSign');
-let LogIn = document.getElementById('afterSign');
-let loginLink = document.getElementById("loginLink");
-console.log(loginLink)
-loginLink.addEventListener("click", ()=>{
-    SignUp.style.display="none"
-    LogIn.style.display='block'
-});
-let signInPAssword = document.getElementById("password")
-let signInConformPassword = document.getElementById("passwordRepeat") 
-
-SignUp.style.display="none"
-// LogIn.style.display='none'
-let signInBtn =document.getElementById('signUpButton');
-console.log(signInBtn, "===>>sign in btn")
-signInBtn.addEventListener("click" , () =>{
-    
-let fullName = document.getElementById("fullName")
-let signInEmail = document.getElementById("email")
-let signInPAssword = document.getElementById("password")
-let signInConformPassword = document.getElementById("passwordRepeat")
-let nav = document.getElementById('nav');
-
-    createUserWithEmailAndPassword(auth, signInEmail.value, signInPAssword.value)
-  .then((userCredential) => {
-    const user = userCredential.user;
  
-    if(signInPAssword.value === signInConformPassword.value) {
-
-        SignUp.style.display="none"
-        LogIn.style.display='block'
-        nav.style.display="none"  
-        console.log("Confurm Ho Gya ",user)
  
-    }else{
-        SignUp.style.display="block"
-        LogIn.style.display='none'
-        signInConformPassword.innerHTML="Password Not Match"
-        signInConformPassword.style.border=" 2px solid red"
-    }
-     
-    console.log("User Found =>", user)
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-   console.log("Error ==>" ,errorCode,errorMessage)
-  });
-
-});
-let goProfile = document.getElementById("goProfile")
-goProfile.addEventListener("click" , () => {
-    profile.style.display="block"
-    nav.style.display="none"
-
-    console.log("sign in Button ==>")
-})
-// let loginBtn = document.getElementById("loginBtn");
-
  
 
 // LogIn Section
 
-// let LogInButton = document.getElementById("LogInButton");
+let goToSignUp = document.getElementById("goToSignUp");
+goToSignUp && goToSignUp.addEventListener("click",() => {
+  location.href="signin.html"
+})
 
-// LogInButton.addEventListener("click" , () => {
+let LogInButton = document.getElementById("LogInButton");
 
-//      let LogInEmail = document.getElementById("emailLogin")
-//      let LogInPassword = document.getElementById("passwordLogin")
-     
-//     signInWithEmailAndPassword(auth, LogInEmail.value, LogInPassword.value)
-//   .then((userCredential) => {
-//      const user = userCredential.user;
-//       console.log("LogIn Hogya hn ..", user)
-//   })
-//   .catch((error) => {
-//     const errorCode = error.code;
-//     const errorMessage = error.message;
-//     console.log(("Kuch garbar hn Log in ma =>" ,errorCode,errorMessage))
-//   });
+LogInButton && LogInButton.addEventListener("click" , () => {
+
+     let LogInEmail = document.getElementById("emailLogin")
+     let LogInPassword = document.getElementById("passwordLogin")
+     signInWithEmailAndPassword(auth, LogInEmail.value, LogInPassword.value)
+  .then((userCredential) => {
+    Swal.fire({
+      icon: 'success',
+      title: 'Login Successfull',
+      text:   "You are Now Login",
+
+       })
+     const user = userCredential.user;
+     location.href="/userpost.html"
+
+      console.log("LogIn Hogya hn ..", user)
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    Swal.fire({
+      icon: 'error',
+      title: 'Wrong',
+      text:  errorMessage,
+       })
+    console.log(("Kuch garbar hn Log in ma =>" ,errorCode,errorMessage))
+  });
     
-// });
+});

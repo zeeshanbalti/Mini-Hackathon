@@ -6,111 +6,516 @@
     <title>Mini Hakaton</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-     
+    
 </head>
 <body>
-     
-
-<!-- Post NavBar -->
-
-        <div id="nav" class="nav">
-
-           <nav  class="navbar bg-body-tertiary bg-primary">
-               <div class="container-fluid">
-                   <a class="navbar-brand first">Personal Blog</a>
-                   <div class="d-flex" role="search">
-                       <h5 id="goProfile" class="btn mx-2">Zeeshan-Balti</h5>    
-                       <button id="loginBtn" class="btn btn-success ">Sigin</button>    
-                    </div>
-                </div>
-            </nav>
-            
-            <nav class="navbar pt-3" style="background-color: #e3f2fd">
-                <div class="container-fluid">
-                    <span class="navbar-brand mb-0 h1  mx-5 dashName" style="font-size: 50px">Dashboard</span>
-                </div>
-            </nav>
-            
-            <div class="postSec"> 
-                <div class="mb-3">
-                    <input type="text" class="form-control place" id="placeholder" placeholder="Placeholder">
-                </div>
-                <div class="mb-3">
-                    <textarea class="form-control placeText" id="placeholderText" placeholder="What is in Your Mind" rows="3"></textarea>
-                </div>
-                <div class="mb-3">
-                    <button id="publish" class="btn btn-primary publish">Publish Blog</button>
-                </div>
-                
-            </div>
-            
-            <div id="blog" class="blog">
-                
-            </div>
-        </div>
-            
-            <!-- Sign In  -->
-        
-
-    <div id="beforeSign" class="signUp">
-        <div class="container">
-            <div class="signUp">
-                <h2>Sign Up</h2>
-            </div>
-            <hr>
-            <div>
-                <input class="fullName" id="fullName" type="text" placeholder="Enter Your Full Name">
-            </div>
-            <div>
-                <input id="email" class="nameInput" placeholder="Enter Your Email" type="email">
-            </div>
-            <div>
-                <input id="password" class="passwordInput" placeholder="Enter Your Password" type="password">
-            </div>        
-            <div>
-                <input id="passwordRepeat" class="passwordInput" placeholder="Confirm Your Password" type="password">
-            </div>
-            <div>
-                <button id="signUpButton" class="signUpButton">Sign Up</button>
-
-            </div>
-            <p class="already">Already have an account
-                <a id="loginLink" class="loginLink" href="##">login</a>
-            </p>
-            
-            <hr>
-        </div>
-    </div>
-
+    
     <!-- Profile -->
-
-
     
-    <div id="profile" class="profile">
-        <img class="profileImg" src="./_DSK2474.JPG" alt="">
-        <h2 class="profileName">Zeeshan Balti</h2>
-        <div>
-            <input id="oldPassword" class="passwordInput mx-3" placeholder="Enter Your Old Password" type="password">
-        </div>        
-        <div>
-            <input id="newpassword" class="passwordInput mx-3" placeholder="Enter Your New Password" type="password">
+     <div class="goodMorning">
+         
+        <nav  class="navbar bg-body-tertiary bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand first">Personal Blog</a>
+            <div class="d-flex" role="search">
+                <h5 id="myName" class="btn mx-2">Zeeshan-Balti</h5>    
+                <button href="signin.html" id="signIn" class="btn btn-success ">signIn</button>    
+            </div>
         </div>
-        <div>
-            <input id="newpasswordrepeat" class="passwordInput mx-3" placeholder="Confirm Your Password" type="password">
-        </div> 
-        <button id="UpdateBtn" class="btn btn-primary mt-4 mx-3">Update</button>
-
-
+    </nav>
+    
+    <nav class="navbar pt-3" style="background-color: #21303b">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1  mx-5 dashName" style="font-size: 50px">Good Morning....</span>
+        </div>
+    </nav>
+    
+    <div class="allblogDiv">
+      <div class="blogDiv">
+        <div class="imgh5">
+          <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+          <h5>Hello Bhi Log
+              <br>
+              <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores officia exercitationem possimus facilis porro ratione cumque quibusdam deleniti similique officiis minus molestias minima, tempora earum recusandae vitae. Suscipit, fugit a?
+            </p>
+        </div>
+    </div>
+    
+    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+            <h5> Introducing While
+                <br>
+                <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aperiam aut corrupti, error veritatis ab quasi ut facilis eos quibusdam officia sapiente provident nobis molestias dolorum quod minu   </p>
+            </div>
     </div>
 
+    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>  
+      <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>  
+       <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>  
+     <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>    <div class="blogDiv">
+        <div class="imgh5">
+            <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
+         <h5>Elon Musk
+             <br>
+             <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
+            </h5>
+        </div>
+        <div class="paragraph mx-3">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum ipsum quidem totam voluptate harum odit nemo obcaecati assumenda, blanditiis debitis ullam c 
+         </p>
+        </div>
+     </div>  
+      
+</div> 
+
+
+    
 
     
     
-<!-- <link rel="stylesheet" href="./dash.html"> -->
-    <script type="module" src="app.js"></script>
-    <script type="module" src="login.js"></script>
-    <script type="module" src="profile.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+   <script type="module" src="index.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 </body>
 </html>
