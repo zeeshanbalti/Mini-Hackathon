@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-app.js";
 import { getAuth ,createUserWithEmailAndPassword ,signInWithEmailAndPassword ,updateProfile ,signOut     } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-auth.js";
 
-import { collection, addDoc ,getFirestore ,serverTimestamp  } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-firestore.js"; 
+import { collection, addDoc ,getFirestore ,serverTimestamp , query, where, getDocs   } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-firestore.js"; 
 
 
 const firebaseConfig = {
@@ -42,50 +42,8 @@ logOutBtn && logOutBtn.addEventListener("click", () => {
 })
 
 
-
-let publish = document.getElementById("publish"); 
-// console.log(publish, "====>>>publish ")
-publish && publish.addEventListener("click" , async () => {
-        try{
-
-            let placeholder = document.getElementById("placeholder")
-            let placeholderText = document.getElementById("placeholderText")
-            
-            const docRef = await addDoc(collection(db, "userPost"), {
-                heading: placeholder.value,
-                text: placeholderText.value,
-                timestamp: serverTimestamp()
-            });
-            console.log("Document written with ID: ", docRef.id);
-        } catch(e){
-            console.log("error==>",e)
-        }
-        
-        let blog = document.getElementById("blog");
-         blog.innerHTML += `
-    <div class="blogDiv">
-       <div class="imgh5">
-         <img class="blogImg mx-3 mt-2" src="./_DSK2474.JPG" alt="">
-        <h5>${placeholder.value}
-        <br>
-        <p class="nameTime">Zeeshan Haider - <span> few min ago</span></p>     
-        </h5>
-       </div>
-       <div class="paragraph mx-3">
-        <p>
-          ${placeholderText.value}
-        </p>
-        <button class="btn">Edit</button>
-        <button class="btn">Delete</button>
-       </div>
-    </div>
-    `
-    placeholder.value= "";
-    placeholderText.value ="";
-    console.log(placeholder.value)
-    console.log(placeholderText.value)
-
-});
+ 
+ 
 
 
 

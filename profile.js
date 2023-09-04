@@ -18,19 +18,12 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-// const washingtonRef = doc(db, "user", user.uid);
- 
+  
 // Profile Section
 
-
-let userName = document.getElementById("userName")
-let userEmail = document.getElementById("userEmail")
-let newpasswordrepeat = document.getElementById("newpasswordrepeat")
-
- 
 let fileInput = document.getElementById("fileInput");
 
-fileInput.addEventListener("change",(e) => {
+fileInput && fileInput.addEventListener("change",(e) => {
   let profileImg = document.getElementById("profileImg")
   profileImg.src = URL.createObjectURL(e.target.files[0])
   console.log(e.target.files[0])

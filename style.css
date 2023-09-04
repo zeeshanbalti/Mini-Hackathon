@@ -1,10 +1,15 @@
+ 
 body {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     /* background-color: rgb(202, 183, 183); */
     background: linear-gradient(80deg, yellow, rgb(243, 242, 242));
+    font-family: 'Dancing Scrip ', cursive;
 
+}
+.name{
+    font-family: 'Great Vibes', cursive;
 }
 
 .container {
@@ -18,9 +23,8 @@ body {
     margin-right: auto;
     margin-top: 5rem;
     font-size: 20px;
-}
+};
 
-;
 
 h2 {
     color: white;
@@ -63,7 +67,7 @@ input {}
     padding: .8rem;
     border: 2px solid pink;
     border-radius: 5px;
-    margin-top: 2rem;
+    margin-top: .5rem;
     /* visibility: hidden */
 }
 .passwordInput {
@@ -71,7 +75,7 @@ input {}
     padding: .8rem;
     border: 2px solid pink;
     border-radius: 5px;
-    margin-top: 2rem;
+    margin-top: 1rem;
     /* visibility: hidden */
 }
 .userEmail {
@@ -79,7 +83,7 @@ input {}
     padding: .8rem;
     border: 2px solid pink;
     border-radius: 5px;
-    margin-top: 2rem;
+    margin-top: .5rem;
     /* visibility: hidden */
 }
 ;
@@ -276,8 +280,10 @@ h1{
 
 }
  .blogImg{
+    margin-left: 0px;
     width: 3rem;
     height: 3rem;
+    border-radius: 5rem;
  }
  .blogDiv{
     width: 25rem;
@@ -307,11 +313,11 @@ h1{
  }
  .profile{
     width: 25rem;
-    height: 30rem;
+    height: 35rem;
     margin-left: 5rem;
     margin-top: 2rem;
-    border-radius: 2rem;
-    border: 2px solid black;
+    border-radius: 1rem;
+    border: 2px solid cyan;
     background-color: white;
 }
 .profileImg{
@@ -336,7 +342,7 @@ h1{
 h1{
 
 }
-.allblogDiv{
+.blogDiv{
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around;
@@ -351,7 +357,39 @@ h1{
   }
 
   .UpdateBtn{
-    position: relative;
+    /* position: relative; */
     bottom: 2rem;
     left: 1rem;
+  }
+  
+
+  /* Edit  */
+
+  .updatePostSec{
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    z-index: 100;
+    padding: 1rem;
+    display: none;
+  }
+  .updateBtn{
+    width: 100%;
+    margin: 0px;
+
+    /* padding: 0px; */
+  }
+  .editBtn{
+    text-decoration: none;
+    color: #000;
+  }
+  .spiner{
+    position: absolute;
+    top: 20rem;
+    left: 37rem;
+    display: none;
+
   }
